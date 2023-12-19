@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="282.0" layoutY="102.0" prefHeight="246.0" prefWidth="403.0" style="-fx-background-color: #CCD1D1;">
+         <children>
+            <Text fill="#34495e" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retrouver votre service " wrappingWidth="298.13671875">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="9.0" layoutY="65.0" prefHeight="167.0" prefWidth="385.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <Text layoutX="11.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir votre numéro de service ." wrappingWidth="341.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="14.0" layoutY="52.0" prefHeight="44.0" prefWidth="310.0" promptText="Numéro de service" />
+                  <Button layoutX="276.0" layoutY="120.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" text="Annuler">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="144.0" layoutY="120.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #F4D03F;" text="Enregistrer">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="289.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/left-arrow-alt-solid-48.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="450.0" prefWidth="270.0" style="-fx-background-color: #34495E;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="132.0" layoutX="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/municipalite-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="37.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Municipalité de Bizerte" wrappingWidth="224.0">
+               <font>
+                  <Font name="Bodoni MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="21.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home-regular-60.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="21.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/phone-regular-60.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="39.0" layoutX="21.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mail-send-regular-24%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="11.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/map-pin-line.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="60.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commune de Bizerte" wrappingWidth="159.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="56.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 72 431 001 (8:30-17:30)" wrappingWidth="209.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="56.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@commune-bizerte.gov.tn" wrappingWidth="187.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Hôtel de Ville,7000 Bizerte" wrappingWidth="224.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

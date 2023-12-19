@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="270.0" prefHeight="450.0" prefWidth="431.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="32.0" layoutY="134.0" />
+            <Button layoutX="59.0" layoutY="120.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="314.0" text="Organiser une équipe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="59.0" layoutY="188.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="314.0" text="Consulter la liste d'équipes">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="62.0" layoutY="320.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="308.0" text="Eliminé un équipe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="59.0" layoutY="252.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="314.0" text="Modifier une information">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="55.0" layoutX="385.0" layoutY="410.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logout-box-line.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="328.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/group-line%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="328.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trash-regular-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="324.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/archive-regular-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="324.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <Text fill="#922b21" layoutX="89.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des Equipes" wrappingWidth="296.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#34495e" layoutX="288.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Déconnecter" underline="true" wrappingWidth="103.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="450.0" prefWidth="270.0" style="-fx-background-color: #34495E;">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="132.0" layoutX="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/municipalite-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="35.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Municipalité de Bizerte" wrappingWidth="209.13671875">
+               <font>
+                  <Font name="Bodoni MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="21.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home-regular-60.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="21.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/phone-regular-60.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="39.0" layoutX="21.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mail-send-regular-24%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="11.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/map-pin-line.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="60.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commune de Bizerte" wrappingWidth="159.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="56.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 72 431 001 (8:30-17:30)" wrappingWidth="209.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="56.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@commune-bizerte.gov.tn" wrappingWidth="187.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Hôtel de Ville,7000 Bizerte" wrappingWidth="224.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

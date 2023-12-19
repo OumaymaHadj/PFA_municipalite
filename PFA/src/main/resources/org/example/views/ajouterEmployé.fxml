@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ajouterController">
+   <children>
+      <Text fill="#34495e" layoutX="220.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau Employé" wrappingWidth="280.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="-2.0" layoutY="116.0" prefHeight="20.0" prefWidth="62.0" />
+      <TextField fx:id="NomTextField" layoutX="89.0" layoutY="78.0" prefHeight="32.0" prefWidth="172.0" promptText="Nom" />
+      <TextField fx:id="PrenomTextField" layoutX="88.0" layoutY="136.0" prefHeight="32.0" prefWidth="172.0" promptText="Prénom" />
+      <TextField fx:id="CINTextField" layoutX="90.0" layoutY="192.0" prefHeight="32.0" prefWidth="172.0" promptText="CIN" />
+      <TextField fx:id="emailTextField" layoutX="89.0" layoutY="247.0" prefHeight="26.0" prefWidth="172.0" promptText="Email" />
+      <DatePicker fx:id="NaissDatePicker" layoutX="476.0" layoutY="136.0" prefHeight="32.0" prefWidth="190.0" promptText="jj/mm/aa" />
+      <TextField fx:id="adresseTextField" layoutX="476.0" layoutY="247.0" prefHeight="32.0" prefWidth="190.0" promptText="Adresse" />
+      <TextField fx:id="telTextField" layoutX="476.0" layoutY="78.0" prefHeight="32.0" prefWidth="190.0" promptText="Tel" />
+      <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="12.0" layoutY="7.0" onMouseClicked="#HandleEvents5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/left-arrow-alt-solid-48.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="358.0" prefHeight="12.0" prefWidth="700.0" style="-fx-background-color: #34495E;">
+         <children>
+            <Text fill="WHITE" layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commune de Bizerte" underline="true" wrappingWidth="199.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="33.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home-regular-60.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="60.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@commune-bizerte.gov.tn" underline="true" wrappingWidth="199.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="39.0" layoutX="33.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mail-send-regular-24%20(2).png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="486.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Hôtel de Ville,7000 Bizerte" wrappingWidth="199.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="484.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 72 431 001 (8:30-17:30)" wrappingWidth="181.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="462.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/phone-regular-60.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="464.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/map-pin-line.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="92.0" layoutX="304.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/municipalite-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="ServiceChoiceBox" layoutX="476.0" layoutY="196.0" prefHeight="25.0" prefWidth="190.0" />
+      <Button layoutX="585.0" layoutY="313.0" mnemonicParsing="false" onAction="#clear" prefHeight="35.0" prefWidth="101.0" text="Vider ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="461.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#HandleEvents" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #F4D03F;" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="288.0" layoutY="81.0" prefHeight="26.0" prefWidth="190.0" text="Numéro de Télèphone :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="139.0" prefHeight="26.0" prefWidth="181.0" text="Date de Naissance  :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="196.0" prefHeight="25.0" prefWidth="159.0" text="      Nom de Service :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="250.0" prefHeight="26.0" prefWidth="101.0" text="Adresse    :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="81.0" prefHeight="26.0" prefWidth="71.0" text="Nom      :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="139.0" prefHeight="26.0" prefWidth="80.0" text="Prénom :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="196.0" prefHeight="26.0" prefWidth="71.0" text="CIN       :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="247.0" prefHeight="21.0" prefWidth="95.0" text="Email     :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="306.0" prefHeight="21.0" prefWidth="80.0" text="Genre    :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="FRadioButton" layoutX="89.0" layoutY="307.0" mnemonicParsing="false" selected="true" text="Féminin">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgGenre" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="MRadioButton" layoutX="205.0" layoutY="307.0" mnemonicParsing="false" text="Masculin" toggleGroup="$tgGenre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lblStatus1" layoutX="88.0" layoutY="116.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus2" layoutX="89.0" layoutY="171.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus3" layoutX="90.0" layoutY="227.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus4" layoutX="88.0" layoutY="279.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus5" layoutX="476.0" layoutY="116.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus7" layoutX="476.0" layoutY="227.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus8" layoutX="476.0" layoutY="279.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus6" layoutX="476.0" layoutY="171.0" prefHeight="20.0" prefWidth="172.0" textFill="#e80d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.modifierEmpController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <Text fill="#34495e" layoutX="237.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier Employé" wrappingWidth="263.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Label layoutX="-2.0" layoutY="116.0" prefHeight="20.0" prefWidth="62.0" />
+            <Label layoutX="18.0" layoutY="176.0" prefHeight="26.0" prefWidth="85.0" text="Prénom :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="224.0" prefHeight="26.0" prefWidth="71.0" text="CIN       :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField layoutX="90.0" layoutY="132.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField layoutX="90.0" layoutY="177.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField layoutX="90.0" layoutY="225.0" />
+            <Label layoutX="20.0" layoutY="273.0" prefHeight="21.0" prefWidth="95.0" text="Email     :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField layoutX="90.0" layoutY="275.0" />
+            <Label layoutX="295.0" layoutY="131.0" prefHeight="26.0" prefWidth="190.0" text="Numéro de Télèphone :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="178.0" prefHeight="26.0" prefWidth="181.0" text="Date de Naissance  :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="485.0" layoutY="179.0" prefHeight="25.0" prefWidth="190.0" />
+            <Label layoutX="391.0" layoutY="274.0" prefHeight="26.0" prefWidth="101.0" text="Adresse    :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField layoutX="485.0" layoutY="275.0" prefHeight="25.0" prefWidth="190.0" />
+            <Label layoutX="333.0" layoutY="225.0" prefHeight="25.0" prefWidth="159.0" text="Numéro de Service :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField layoutX="485.0" layoutY="132.0" prefHeight="25.0" prefWidth="190.0" />
+            <Label layoutX="20.0" layoutY="131.0" prefHeight="26.0" prefWidth="80.0" text="Nom      :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="92.0" layoutY="329.0" mnemonicParsing="false" text="Féminin">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="229.0" layoutY="329.0" mnemonicParsing="false" text="Masculin">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="12.0" layoutY="328.0" prefHeight="21.0" prefWidth="80.0" text="Genre    :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutY="7.0" onMouseClicked="#HandleEvents5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/left-arrow-alt-solid-48.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="472.0" layoutY="322.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #F4D03F;" text="Valider">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="585.0" layoutY="323.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Vider tous">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <TextField layoutX="255.0" layoutY="84.0" prefHeight="25.0" prefWidth="190.0" promptText="CIN" />
+            <Button layoutX="448.0" layoutY="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" />
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="450.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/search-alt-regular-36.png" />
+               </image>
+            </ImageView>
+            <ChoiceBox layoutX="485.0" layoutY="225.0" prefHeight="25.0" prefWidth="190.0" />
+            <Button layoutX="229.0" layoutY="132.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="20.0" />
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="227.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="229.0" layoutY="177.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="20.0" />
+            <Button layoutX="229.0" layoutY="225.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="20.0" />
+            <Button layoutX="227.0" layoutY="275.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="20.0" />
+            <Button layoutX="655.0" layoutY="132.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="20.0" />
+            <Button layoutX="655.0" layoutY="276.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="20.0" />
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="229.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="229.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="229.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="655.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="655.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/highlight-regular-36.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="91.0" layoutY="156.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="204.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="250.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="298.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="366.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="485.0" layoutY="156.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="485.0" layoutY="204.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="485.0" layoutY="250.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="485.0" layoutY="298.0" prefHeight="20.0" prefWidth="172.0" text="Status :" textFill="#e80d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="366.0" prefHeight="40.0" prefWidth="700.0" style="-fx-background-color: #34495E;">
+               <children>
+                  <Text fill="WHITE" layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commune de Bizerte" underline="true" wrappingWidth="199.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="33.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home-regular-60.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="60.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@commune-bizerte.gov.tn" underline="true" wrappingWidth="199.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="24.0" fitWidth="39.0" layoutX="33.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/mail-send-regular-24%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="486.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Hôtel de Ville,7000 Bizerte" wrappingWidth="199.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="484.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+216 72 431 001 (8:30-17:30)" wrappingWidth="181.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="462.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/phone-regular-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="464.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/map-pin-line.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="83.0" fitWidth="92.0" layoutX="309.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/municipalite-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
